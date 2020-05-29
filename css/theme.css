@@ -1,0 +1,118 @@
+/* Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+header {
+  margin: 0;
+  z-index: 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+/* Navigation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.nav-logo {
+  width: 100px;
+  padding: 2rem 0;
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  .nav-logo {
+    width: 150px;
+    padding: 2rem 0;
+  }
+}
+
+
+
+.show-menu-btn {
+  cursor: pointer;
+  margin: auto 0;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  /* margin-top: 30px; */
+}
+
+.overlay a {
+  padding: 0 1em;
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #222;
+  text-transform: uppercase;
+  display: block;
+  transition: 0.3s;
+}
+
+/* .overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+} */
+
+.overlay .close-menu-btn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+.drop-down-arrow {
+  padding-left: .5em;
+}
+
+.sub-menu {
+  height: 0px;
+  width: 100%;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+/* Home
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.hero-title {
+  font-weight: 700;
+}
+
+.background-block {
+  background-color: black;
+  position: fixed;
+  z-index: -1;
+  width: 1200px;
+  height: 100vh;
+  /* top:-5%;
+  left:-5%; */
+  transform: rotate(-45deg);
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  .background-block {
+    background-color: black;
+    position: fixed;
+    z-index: -1;
+    width: 1700px;
+    height: 100vh;
+    /* top:-5%;
+    left:-5%; */
+    transform: rotate(-45deg);
+  }
+}
